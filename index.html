@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/carousel.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-header">
+            <nav class="container-nav">
+                <div class="dropdown">
+                    <button class="menu-content"> Menú 1</button>
+                    <div class="drp-content  menushido">
+                        <a href="#Parallax">Parallax</a>
+                        <a href="#get">Get in Touch</a>
+                        <a href="#sponsors">Sponsors</a>
+                    </div>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="logo-img"
+                    class="img-logo">
+                <div class="dropdown">
+                    <button class="menu-content"> Menú 2</button>
+                    <div class="drp-content">
+                        <a href="#Parallax">Parallax</a>
+                        <a href="#get">Get in touch</a>
+                        <a href="#sponsors">Sponsors</a>
+                    </div>
+                </div>
+
+
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="container-text">
+                <h2>
+                    Loop Video
+                    <span>
+                        Developing a proto :)
+                    </span>
+                </h2>
+
+            </div>
+
+        </div>
+        <video controls autoplay muted loop>
+            <source
+                src="https://static.videezy.com/system/resources/previews/000/012/979/original/record_player_011.mp4">
+        </video>
+        <img src="https://img.milanuncios.com/fg/1700/07/170007417_1.jpg" alt="">
+    </div>
+
+    <div class="anything-else">
+        <div class="image">
+            <img src="https://st2.depositphotos.com/4211709/7708/i/600/depositphotos_77085751-stock-photo-flower.jpg"
+                alt="">
+        </div>
+        <div class="container-thing">
+            <h2>
+                Title for sth
+            </h2>
+            <p class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat reprehenderit quasi doloremque
+                ratione. Odio non minus vitae quas, nobis voluptatem nisi, illo, sed similique tempora libero suscipit
+                dolor vel eveniet.
+            </p>
+
+
+        </div>
+    </div>
+
+    <section id="Parallax">
+        <h1>Parallax</h1>
+        <div class="container-parallax">
+            <div class="parallax"></div>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus recusandae quidem nobis ipsum, eius
+                itaque tempora ad facilis, repellendus consectetur vitae fugit. Modi suscipit repellendus eum similique
+                earum pariatur culpa!
+            </p>
+        </div>
+    </section>
+
+    <section class="interactive">
+        <h1>Interacción</h1>
+
+        <div class="container-table">
+            <div class="table-cont" onclick="text(this.children[1])">
+                <p class="title-table">Title 1</p>
+                <img src="https://www.fodors.com/wp-content/uploads/2019/07/01_BlueCities__Chefchaouen_shutterstock_1211338525.jpg"
+                    alt="blue-street" class="img-table">
+
+            </div>
+            <div class="table-cont" onclick="text(this.children[1])">
+                <p class="title-table">Title 2</p>
+                <img src="https://www.fodors.com/wp-content/uploads/2019/07/08_BlueCities__WhyisitBlue_iStock-493935776.jpg"
+                    alt="blue-citie" class="img-table">
+
+
+            </div>
+            <div class="table-cont" onclick="text(this.children[1])">
+                <p class="title-table">Title 3</p>
+                <img src="https://c.pxhere.com/photos/a0/6f/background_blooming_blur_colors_countryside_field_flora_flowers-1522913.jpg!d"
+                    alt="purple-flowers" class="img-table">
+            </div>
+            <div class="table-cont" onclick="text(this.children[1])">
+                <p class="title-table">Title 4</p>
+                <img src="https://i.pinimg.com/originals/bd/13/29/bd1329e6d877f4aa1d20b2b3dc2f11c0.jpg" alt="tree"
+                    class="img-table">
+
+            </div>
+
+
+        </div>
+
+
+        <div class="topic-content">
+            <h4 class="title-topics">
+
+            </h4>
+            <p class="text-topics">
+
+            </p>
+        </div>
+    </section>
+
+
+    <section id="get" class="contact-form">
+        <div class="overlay-contact">
+            <h4>
+                Get in touch
+            </h4>
+            <form id="ficha" action="/post/data/" enctype="application/x-www-form-urlencoded" method="post">
+
+                <div class="container-form">
+                    <label for="name-input"> Name* </label>
+                    <input id="name-input" type="text" placeholder="Type your name" name="nameInput">
+                    <p class="warning-message-1"></p>
+                    <label for="phone-input"> Phone* </label>
+                    <input id="phone-input" type="text" placeholder="Phone" name="phoneInput">
+                    <p class="warning-message-2"></p>
+                    <label for="email-input"> Email* </label>
+                    <input id="email-input" type="text" placeholder="name@email.com" name="emailInput">
+                    <p class="warning-message-3"></p>
+
+
+                </div>
+                <button id="submit-form"> Send </button>
+            </form>
+        </div>
+
+
+
+
+    </section>
+
+
+    <div id="sponsors" class="container-carousel">
+
+        <ul class="slider">
+            <li id="slide1">
+                <img src="./public/assets/logos/1.png" />
+            </li>
+            <li id="slide2">
+                <img src="./public/assets/logos/2.png" />
+            </li>
+            <li id="slide3">
+                <img src="./public/assets/logos/3.png" />
+            </li>
+            <li id="slide4">
+                <img src="./public/assets/logos/4.png" />
+            </li>
+            <li id="slide5">
+                <img src="./public/assets/logos/5.png" />
+            </li>
+            <li id="slide6">
+                <img src="./public/assets/logos/6.png" />
+            </li>
+        </ul>
+
+        <ul class="menu">
+            <li>
+                <a href="#slide1"></a>
+            </li>
+            <li>
+                <a href="#slide2"></a>
+            </li>
+            <li>
+                <a href="#slide3"></a>
+            </li>
+            <li>
+                <a href="#slide4"></a>
+            </li>
+            <li>
+                <a href="#slide5"></a>
+            </li>
+            <li>
+                <a href="#slide6"></a>
+            </li>
+        </ul>
+
+    </div>
+
+    <footer>
+        <div class="header">
+            Derechos reservados
+        </div>
+    </footer>
+
+</body>
+<script src="public/index.js"></script>
+
+
+</html>

@@ -23,6 +23,10 @@ const mockData = [{
 const contact = {};
 
 //Query
+document.addEventListener('DOMContentLoaded', () => {
+    navegacionFija();
+})
+
 const titleTopic = document.querySelector('.title-topics');
 const textTopic = document.querySelector('.text-topics');
 const nameInput = document.querySelector('#name-input');
@@ -36,6 +40,19 @@ const pTargetThree = document.querySelector('.warning-message-3')
 
 //Events
 
+
+const navegacionFija = () => {
+
+    const barra = document.querySelector('.header')
+
+    //Registrar IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+        (entries[0].isIntersecting) ? barra.classList.remove('.header-trans') : barra.classList.add('.header-trans')
+        console.log(entries[0])
+        observer.observe(document.querySelector(".anything-else"));
+    });
+
+}
 nameInput.addEventListener('change', () => {
     if( parseInt(nameInput.value.length) <= 5){pTargetOne.textContent = "Ingresa tu nombre completo"}
     setTimeout(() => {pTargetOne.textContent = ''}, 3000)

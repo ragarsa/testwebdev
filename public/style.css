@@ -38,6 +38,7 @@
   }
 
 
+
 .dropdown:hover .drp-content {
     display: block;
   }
@@ -65,6 +66,18 @@ p {
 .header {
     background-color: var(--color-greender);
 }
+
+.header .header-trans{
+    background-color: white;
+    position:fixed;
+    max-width: 120rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 .container-nav {
     max-width: 120rem;
@@ -114,6 +127,7 @@ h4 {
     max-height: 30rem;
     overflow: hidden;
     min-width: 100%;
+    
 }
 
 .video .overlay {
@@ -284,10 +298,10 @@ footer div {
         display: none;
     }
     
-    .menushido{
+    .menushido {
         display: block;
-        position: relative;
-    }
+      }
+
     .overlay {
         width: 50rem;
         height: 50rem;
